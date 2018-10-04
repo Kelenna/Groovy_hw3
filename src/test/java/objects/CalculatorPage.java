@@ -28,6 +28,14 @@ public class CalculatorPage {
     }
 
     @Step
+    public String check_value (String expression) {
+        for (int i = 0; i < expression.length(); i++) {
+            driver.findElement(By.name("" + expression.charAt(i) + "")).click();
+        }
+        return driver.findElement(resultBox).getAttribute("value");
+    }
+
+    @Step
     public void open() {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("calc.html").getFile());
