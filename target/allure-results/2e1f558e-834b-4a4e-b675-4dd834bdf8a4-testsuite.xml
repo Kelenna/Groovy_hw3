@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1538664769585" stop="1538664815921" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>CalculatorSpec</name>
+    <test-cases>
+        <test-case start="1538664801818" stop="1538664804485" status="passed">
+            <name>My Super test for calculator</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1538664804620" stop="1538664805840" status="passed">
+            <name>Test 2+2 = 4</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1538664805842" stop="1538664806689" status="passed">
+            <name>Test 1+1 = 2</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1538664806691" stop="1538664807745" status="passed">
+            <name>Test -1-1 = -2</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1538664807753" stop="1538664808604" status="passed">
+            <name>Test 0-1 = -1</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1538664808606" stop="1538664809598" status="passed">
+            <name>Test 1-0 = 1</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1538664809601" stop="1538664810518" status="passed">
+            <name>Test 1/1 = 1</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1538664810521" stop="1538664811464" status="passed">
+            <name>Test 1x1 = 1</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1538664811466" stop="1538664814842" status="passed">
+            <name>Test 12563272x21312.32 = 267752473111.04</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-JOPP9V7"/>
+                <label name="thread" value="7452@DESKTOP-JOPP9V7.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
