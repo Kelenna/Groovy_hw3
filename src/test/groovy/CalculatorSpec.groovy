@@ -5,40 +5,64 @@ class CalculatorSpec extends BaseSpec {
         c_calc.open()
     }
 
-    def "My Super test for calculator"() {
+    @Unroll
+    def "Button-value test #button = #value"() {
         given:
         c_calc.clear()
 
-        when:
-        c_calc.click_4()
-        c_calc.click_2()
-        c_calc.click_plus()
-        c_calc.click_2()
-        c_calc.click_equal()
+        expect:
+        calc.check_value (button) == value
 
-        then:
-        c_calc.getResult() == '44'
+        where:
+        button          | value
+        "0"             |"0"
+        "1"             |"1"
+        "2"             |"2"
+        "3"             |"3"
+        "4"             |"4"
+        "5"             |"5"
+        "6"             |"6"
+        "7"             |"7"
+        "8"             |"8"
+        "9"             |"9"
 
     }
 
     @Unroll
-    def "Test #expression = #expected"() {
+    def "Zero div-mult test #expression = #result"() {
         given:
         calc.clear()
 
         expect:
-        calc.calculate(expression) == expected
+        calc.calculate(expression) == result
 
         where:
-        expression          | expected
-        "2+2"               | "4"
-        "1+1"               | "2"
-        "-1-1"              | "-2"
-        "0-1"               | "-1"
-        "1-0"               | "1"
-        "1/1"               | "1"
-        "1x1"               | "1"
-        "12563272x21312.32" | "267752473111.04"
+        expression          | result
+        "1/0"               | "Infinity"
+        "0/0"               | "NaN"
+        "-1/0"              | "-Infinity"
+        "0/1"               | "0"
+        "0/-1"              | "0"
+        "0.1/0"             | "Infinity"
+        "-0.1/0"            | "-Infinity"
+        "1x0"               | "0"
+        "0x0"               | "0"
+        "-1x0"              | "0"
+        "0.1x0"             | "0"
+        "-0.1x0"            | "0"
+        "1."                | "1"
+        "1.."               | "1"
+        "0."                | "0"
+        "-1."               | "1"
+        ".1"                | "1"
+        "..1"               | "1"
+        "-.1"               | "-1"
+        "-..1"              | "-1"
+        "0..1"              | "0.1"
+        "-0..1"             | "-0.1"
+        "99999999999999999x99999999999999999" | "1e+34"
+        "0.000000000000000x0.000000000000000" | "0"
+
     }
 
 
