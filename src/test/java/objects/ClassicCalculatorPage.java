@@ -46,10 +46,8 @@ public class ClassicCalculatorPage {
     }
 
     @Step
-    public void click_0() {
-        driver.findElement(button_0).click();
-    }
-
+    public void click_0() { driver.findElement(button_0).click(); }
+    
     @Step
     public void click_1() {
         driver.findElement(button_1).click();
@@ -66,9 +64,7 @@ public class ClassicCalculatorPage {
     }
 
     @Step
-    public void click_4() {
-        driver.findElement(button_4).click();
-    }
+    public void click_4() { driver.findElement(button_4).click(); }
 
     @Step
     public void click_5() {
@@ -134,6 +130,7 @@ public class ClassicCalculatorPage {
     public String getResult() {
         return driver.findElement(result_box).getAttribute("value");
     }
+
 
     @Step
     public void open() {
